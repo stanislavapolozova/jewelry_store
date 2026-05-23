@@ -1,4 +1,3 @@
-// главная страница
 import { Link } from 'react-router-dom';
 import './Home.css';
 
@@ -18,17 +17,17 @@ function Home() {
                     <h2 className="section-title">Коллекции</h2>
                     <div className="categories__grid">
                         <Link to="/catalog?category=necklaces" className="category-card">
-                            <img src="/images/necklaces.jpg" alt="Ожерелья" className="category-card__image" />
+                            <img src="src/assets/necklace1.jpg" alt="Ожерелья" className="category-card__image" />
                             <h3 className="category-card__title">Ожерелья</h3>
                             <p>Элегантность линий</p>
                         </Link>
                         <Link to="/catalog?category=bracelets" className="category-card">
-                            <img src="/images/bracelets.jpg" alt="Браслеты" className="category-card__image" />
+                            <img src="src/assets/bracelet1.jpg" alt="Браслеты" className="category-card__image" />
                             <h3 className="category-card__title">Браслеты</h3>
                             <p>Изящность мысли</p>
                         </Link>
                         <Link to="/catalog?category=earrings" className="category-card">
-                            <img src="/images/earrings.jpg" alt="Серьги" className="category-card__image" />
+                            <img src="src/assets/earrings1.jpg" alt="Серьги" className="category-card__image" />
                             <h3 className="category-card__title">Серьги</h3>
                             <p>Гармоничность образа</p>
                         </Link>
