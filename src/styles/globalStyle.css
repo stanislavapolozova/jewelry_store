@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: #FDF8F0;
+  color: #2C2A29;
+  line-height: 1.5;
+}
+
+/* Все заголовки — элегантный шрифт */
+h1, h2, h3, h4, .section-title, .hero__title, .catalog__title, .contacts__title, .about__text h1, .about__text h2, .quote__container p {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+}
+
+/* Дополнительно для самых крупных заголовков можно увеличить вес */
+h1, .hero__title, .catalog__title, .contacts__title {
+  font-weight: 600;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
