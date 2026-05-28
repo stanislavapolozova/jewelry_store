@@ -1,0 +1,59 @@
+.phone-menu__burger {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #2C2A29;
+    display: block;
+}
+
+.phone-menu__nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    max-width: 300px;
+    height: 100%;
+    background: #FDF8F0;
+    box-shadow: 2px 0 12px rgba(0,0,0,0.1);
+    z-index: 1000;
+    padding: 2rem 1rem;
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+}
+
+.phone-menu__close {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    float: right;
+}
+
+.phone-menu__list {
+    list-style: none;
+    margin-top: 2rem;
+    padding: 0;
+}
+
+.phone-menu__list li {
+    margin: 1rem 0;
+}
+
+.phone-menu__list a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #2C2A29;
+    font-weight: 500;
+}
+
+.phone-menu__list a.active {
+    color: #C05C7E;  
+    border-bottom: 1px solid #C05C7E;
+}
+
+@media (min-width: 769px) {
+    .phone-menu {
+        display: none;
+    }
+}

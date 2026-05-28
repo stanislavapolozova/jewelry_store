@@ -1,0 +1,84 @@
+.header {
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #C05C7E;  /* розовый, не золотой */
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 1px;
+}
+
+.header__burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.header__burger span {
+  width: 25px;
+  height: 2px;
+  background: #4A2A2F;
+  transition: 0.2s;
+}
+
+.header__nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.header__nav a {
+  text-decoration: none;
+  color: #2C2A29;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.header__nav a:hover,
+.header__nav a.active {
+  color: #C05C7E;  /* розовый, вместо золотого */
+}
+
+@media (max-width: 768px) {
+  .header__burger {
+    display: flex;
+  }
+
+  .header__nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    flex-direction: column;
+    gap: 0;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+    padding: 1rem 0;
+  }
+
+  .header__nav--open {
+    display: flex;
+  }
+
+  .header__nav a {
+    padding: 0.8rem 2rem;
+    border-top: 1px solid #F0E0E0;
+  }
+}
