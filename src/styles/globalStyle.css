@@ -6,11 +6,24 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
-    background-color: #FDF8F0;
+    background-color: #FDF8F0;  /* розово-бежевый фон */
     color: #2C2A29;
     line-height: 1.5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 h1, h2, h3, h4, .section-title, .hero__title, .catalog__title,
