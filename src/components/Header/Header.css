@@ -7,8 +7,11 @@
     z-index: 10;
 }
 .header__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;  
     align-items: center;
 }
 .header__logo {
@@ -17,24 +20,65 @@
     text-decoration: none;
     color: #C05C7E;
     font-family: 'Playfair Display', serif;
-    letter-spacing: 1px;
+    line-height: 1; 
+}
+.header__burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+.header__burger span {
+    width: 25px;
+    height: 2px;
+    background: #2C2A29;
+    transition: 0.2s;
 }
 .header__nav {
     display: flex;
     gap: 2rem;
+    align-items: center;
 }
 .header__nav a {
     text-decoration: none;
     color: #2C2A29;
     font-weight: 500;
     transition: color 0.2s;
+    line-height: 1;
 }
 .header__nav a:hover,
 .header__nav a.active {
     color: #C05C7E;
 }
 @media (max-width: 768px) {
+    .header__container {
+        padding: 0 16px;
+    }
+    .header__burger {
+        display: flex;
+    }
     .header__nav {
         display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        gap: 0;
+        box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+        padding: 1rem 0;
+        align-items: stretch;
+    }
+    .header__nav--open {
+        display: flex;
+    }
+    .header__nav a {
+        padding: 0.8rem 2rem;
+        border-top: 1px solid #F0E0E0;
+        width: 100%;
     }
 }
