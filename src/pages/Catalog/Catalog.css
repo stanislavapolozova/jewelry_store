@@ -1,89 +1,49 @@
 .catalog {
-  padding: 2rem 0;
+    padding: 2rem 0;
 }
-
 .catalog__title {
-  text-align: center;
-  font-size: 2rem;
-  color: #6B2D3C;
-  margin-bottom: 2rem;
-  font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-size: 2rem;
+    color: #6B2D3C;
+    margin-bottom: 2rem;
+    font-family: 'Playfair Display', serif;
 }
-
-/* Вкладки */
 .catalog__tabs {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-bottom: 2rem;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
 }
-
 .catalog__tab {
-  background: #F6E6EA;
-  border: none;
-  padding: 0.6rem 1.5rem;
-  border-radius: 40px;
-  font-weight: 500;
-  color: #6B2D3C;
-  transition: all 0.2s;
-  cursor: pointer;
+    background: #F6E6EA;
+    border: none;
+    padding: 0.6rem 1.5rem;
+    border-radius: 40px;
+    font-weight: 500;
+    color: #6B2D3C;
+    transition: all 0.2s;
+    cursor: pointer;
 }
-
 .catalog__tab:hover {
-  background: #E8D0D8;
+    background: #E8D0D8;
 }
-
 .catalog__tab--active {
-  background: #8B2C3D;
-  color: white;
+    background: #8B2C3D;
+    color: white;
 }
-
-/* Сетка карточек: по умолчанию 3 колонки */
 .catalog__grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
 }
-
-/* Планшеты: 2 колонки */
 @media (max-width: 900px) {
-  .catalog__grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+    .catalog__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
-
-/* Телефоны: 1 колонка */
 @media (max-width: 600px) {
-  .catalog__grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Модальное окно */
-.modal__image {
-  width: 100%;
-  height: 260px;
-  object-fit: cover;
-  border-radius: 16px;
-  margin-bottom: 1rem;
-}
-
-.modal__title {
-  font-size: 1.6rem;
-  color: #4A2A2F;
-  margin-bottom: 0.5rem;
-  font-family: 'Playfair Display', serif;
-}
-
-.modal__fullDesc {
-  color: #2C2A29;
-  line-height: 1.4;
-  margin-bottom: 1rem;
-}
-
-.modal__price {
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: #8B2C3D;
+    .catalog__grid {
+        grid-template-columns: 1fr;
+    }
 }
