@@ -4,7 +4,13 @@
     font-size: 2rem;
     cursor: pointer;
     color: #2C2A29;
-    display: block;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .phone-menu__burger {
+        display: block;
+    }
 }
 
 .phone-menu__nav {
@@ -18,8 +24,6 @@
     box-shadow: 2px 0 12px rgba(0,0,0,0.1);
     z-index: 1000;
     padding: 2rem 1rem;
-    transform: translateX(0);
-    transition: transform 0.3s ease;
 }
 
 .phone-menu__close {
@@ -48,7 +52,7 @@
 }
 
 .phone-menu__list a.active {
-    color: #C05C7E;  
+    color: #C05C7E;
     border-bottom: 1px solid #C05C7E;
 }
 
