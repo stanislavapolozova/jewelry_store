@@ -1,33 +1,43 @@
 .about {
     padding: 3rem 0;
 }
+
 .about__content {
     display: flex;
     gap: 3rem;
     align-items: center;
     flex-wrap: wrap;
 }
+
 .about__text {
-    flex: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
 }
+
 .about__text h1 {
     font-size: 2rem;
     color: #6B2D3C;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
+    font-family: 'Playfair Display';
 }
+
 .about__text p {
     margin-bottom: 1rem;
     line-height: 1.5;
 }
+
 .about__text h2 {
     font-size: 1.4rem;
     color: #6B2D3C;
     margin: 1rem 0 0.5rem;
 }
+
 .about__text ul {
     list-style: disc;
     padding-left: 1.5rem;
 }
+
 .about__text li {
     margin: 0.5rem 0;
 }

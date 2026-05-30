@@ -1,13 +1,15 @@
 .catalog {
     padding: 2rem 0;
 }
+
 .catalog__title {
     text-align: center;
     font-size: 2rem;
     color: #6B2D3C;
     margin-bottom: 2rem;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display';
 }
+
 .catalog__tabs {
     display: flex;
     justify-content: center;
@@ -15,6 +17,7 @@
     margin-bottom: 2rem;
     flex-wrap: wrap;
 }
+
 .catalog__tab {
     background: #F6E6EA;
     border: none;
@@ -25,23 +28,31 @@
     transition: all 0.2s;
     cursor: pointer;
 }
+
 .catalog__tab:hover {
     background: #E8D0D8;
 }
+
 .catalog__tab--active {
     background: #8B2C3D;
     color: white;
 }
+
 .catalog__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+    max-width: 1200px;    /* ← ДОБАВИТЬ */
+    margin: 0 auto;       /* ← ДОБАВИТЬ */
+    width: 100%;
 }
+
 @media (max-width: 900px) {
     .catalog__grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
 @media (max-width: 600px) {
     .catalog__grid {
         grid-template-columns: 1fr;
