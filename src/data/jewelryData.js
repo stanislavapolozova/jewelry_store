@@ -6,7 +6,7 @@ export const jewelryData = [
     shortDesc: "Розовый кварц, лунный камень, аквамарин, горный хрусталь",
     fullDesc: "Нежное ожерелье ручной работы. Камень приносит спокойствие и ясность мыслей.",
     price: "1 200 ₽",
-    image: "src/assets/necklace2.jpg"
+    image: "/images/necklace2.jpg"
   },
 
   {
@@ -16,7 +16,7 @@ export const jewelryData = [
     shortDesc: "Натуральные коралл, долматиновая яшма и жемчуг",
     fullDesc: "Элегантное украшение к вечернему образу.",
     price: "2 900 ₽",
-    image: "src/assets/necklace3.jpg"
+    image: "/images/necklace3.jpg"
   },
 
   {
@@ -26,7 +26,7 @@ export const jewelryData = [
     shortDesc: "Натуральные ракушка и жемчуг",
     fullDesc: "Гармоничное и нежное дополнение к летним образам.",
     price: "2 600 ₽",
-    image: "src/assets/necklace1.jpg"
+    image: "/images/necklace1.jpg"
   },
 
   {
@@ -34,9 +34,9 @@ export const jewelryData = [
     name: "Браслет «Гармония»",
     category: "bracelets",
     shortDesc: "Натуральные горный хрусталь и гематит",
-    fullDesc: "Минималистичное дополение к любому образу. Регулируется под любой размер.",
+    fullDesc: "Минималистичное дополнение к любому образу. Регулируется под любой размер.",
     price: "1 100 ₽",
-    image: "src/assets/bracelet1.jpg"
+    image: "/images/bracelet1.jpg"
   },
 
   {
@@ -46,7 +46,7 @@ export const jewelryData = [
     shortDesc: "Натуральные горный хрусталь и оникс",
     fullDesc: "Изящный браслет с ярким акцентом. Регулируется под любой размер.",
     price: "1 100 ₽",
-    image: "src/assets/bracelet2.jpg"
+    image: "/images/bracelet2.jpg"
   },
 
   {
@@ -56,7 +56,7 @@ export const jewelryData = [
     shortDesc: "Натуральные горный хрусталь и лунный камень",
     fullDesc: "Нежное сочетание блеска и прозрачности камней. Регулируется под любой размер.",
     price: "1 100 ₽",
-    image: "src/assets/bracelet3.jpg"
+    image: "/images/bracelet3.jpg"
   },
 
   {
@@ -64,9 +64,9 @@ export const jewelryData = [
     name: "Серьги «Морская звезда»",
     category: "earrings",
     shortDesc: "Натуральные ракушка и жемчуг",
-    fullDesc: "Идеальное дополнеие к ожерелью.",
+    fullDesc: "Идеальное дополнение к ожерелью.",
     price: "1 600 ₽",
-    image: "src/assets/earrings1.jpg"
+    image: "/images/earrings1.jpg"
   },
 
   {
@@ -76,6 +76,6 @@ export const jewelryData = [
     shortDesc: "Натуральные коралл, долматиновая яшма и жемчуг",
     fullDesc: "Гармоничное дополнение к ожерелью.",
     price: "1 600 ₽",
-    image: "src/assets/earrings2.jpg"
+    image: "/images/earrings2.jpg"
   }
 ];
