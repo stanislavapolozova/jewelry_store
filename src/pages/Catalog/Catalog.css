@@ -42,19 +42,72 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    max-width: 1200px;    /* ← ДОБАВИТЬ */
-    margin: 0 auto;       /* ← ДОБАВИТЬ */
+    max-width: 1200px;
+    margin: 0 auto; 
     width: 100%;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
+    .catalog {
+        padding: 1.5rem 0;
+    }
+    
+    .catalog .container {
+        padding: 0 20px;
+    }
+    
+    .catalog__title {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+    
     .catalog__grid {
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 1.2rem;
+        max-width: 900px; 
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+    .catalog__tab {
+        padding: 0.5rem 1.2rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .catalog {
+        padding: 1.5rem 0;
+    }
+    
+    .catalog__title {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .catalog__grid {
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        max-width: 600px;
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+    .catalog__tab {
+        padding: 0.5rem 1.2rem;
+        font-size: 0.9rem;
     }
 }
 
 @media (max-width: 600px) {
     .catalog__grid {
-        grid-template-columns: 1fr;
+        display: grid;
+        grid-template-columns: 1fr; 
+        gap: 1rem;
+        max-width: 280px;
+        margin: 0 auto;
+        width: 100%;
     }
+
 }
